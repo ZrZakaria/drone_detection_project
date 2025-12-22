@@ -10,12 +10,17 @@ This project implements a complete pipeline for **Drone Detection, Tracking, and
 The project is organized into three main sequential steps:
 
 ### 1️⃣ Step 1: Detection & Fine-tuning
-- **Objective**: Select the best object detection model and fine-tune it for drones.
-- **Models Compared**: EfficientDet, YOLOv8, and YOLOv9.
-- **Process**: 
-  - Evaluation of pre-trained models on a drone dataset.
-  - Fine-tuning the best-performing model (YOLOv8) on an expanded dataset to improve precision and recall.
-  - Storage of weights (`best.pt`) for the next steps.
+- **Objective**: Select and optimize the best detection model for multi-range drone identification.
+- **Model Evolution & Fine-tuning History**:
+  - **Initial Model (`runs/`)**: YOLOv8 trained on a dataset of close-up drone images (available in the `datasets/` folder).
+  - **Phase 1 Fine-tuning (`runs_finetunev1/`)**: 
+    - Goal: Detect drones at a distance. 
+    - Source: [Anti-UAV (Anti-UAV300)](https://github.com/ZhaoJ9014/Anti-UAV) dataset.
+    - Processing: Footage converted to unique single frames to prevent overfitting.
+    - Issue: The large imbalance in dataset size caused the model to lose its ability to detect close-up drones.
+  - **Final Model (`runs_finetune/`)**: 
+    - Strategy: Combined dataset with a balanced ratio (~75% far-away and 25% close-up shots).
+    - Result: Highly robust model that excels in both close-range and long-distance detection.
 
 ### 2️⃣ Step 2: Multi-Object Tracking (ByteTrack)
 - **Objective**: Assign unique IDs to detections and track them across video frames.

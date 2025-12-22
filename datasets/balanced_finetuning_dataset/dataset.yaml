@@ -1,0 +1,33 @@
+# Balanced Fine-Tuning Dataset Configuration for YOLOv8
+# Optimized for continual learning: prevents forgetting while adding far-away detection
+# Created: 2025-12-22 19:40:09
+
+# Strategy: Option A (Conservative)
+# - All close-up images retained (prevent catastrophic forgetting)
+# - Sampled far-away images (add new capability)
+# - Ratio: 74.6% far / 25.4% close
+
+# Paths (relative to this file)
+path: .  # dataset root dir
+train: images/train
+val: images/val
+test: images/test
+
+# Classes
+nc: 1  # number of classes
+names: ['drone']  # class names
+
+# Dataset Statistics
+# Train: 2955 images (2004 far + 951 close)
+# Val: 1045 images (842 far + 203 close)
+# Test: 1358 images (1153 far + 205 close)
+# Total: 5358 images
+
+# Use Case: Fine-tuning a model already trained on close-up drones
+# Purpose: Add far-away detection capability without forgetting close-up detection
+
+# Recommended Training Parameters:
+# - epochs: 50-100
+# - lr0: 0.001 (lower learning rate to preserve close-up knowledge)
+# - warmup_epochs: 3
+# - batch: 16
