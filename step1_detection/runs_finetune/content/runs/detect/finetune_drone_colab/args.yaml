@@ -1,7 +1,7 @@
 task: detect
 mode: train
 model: /content/drive/MyDrive/AI_PROJECT/yolov8_project/runs/detect/train/weights/best.pt
-data: /content/new_dataset/yolov8_finetuning_dataset/dataset.yaml
+data: /content/new_dataset/balanced_finetuning_dataset/dataset.yaml
 epochs: 30
 time: null
 patience: 100
