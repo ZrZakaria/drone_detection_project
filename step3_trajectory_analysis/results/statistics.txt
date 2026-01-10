@@ -1,0 +1,58 @@
+=== STATISTIQUES D'ANALYSE ===
+
+Drone ID 1:
+  - Frames analysées: 388
+  - Score de menace moyen: 33.1
+  - Score de menace max: 80.0
+  - Comportement NORMAL: 291 frames
+  - Comportement SUSPECT: 20 frames
+  - Comportement HOSTILE: 77 frames
+
+Drone ID 2:
+  - Frames analysées: 10
+  - Score de menace moyen: 7.0
+  - Score de menace max: 35.0
+  - Comportement NORMAL: 8 frames
+  - Comportement SUSPECT: 2 frames
+  - Comportement HOSTILE: 0 frames
+
+Drone ID 5:
+  - Frames analysées: 6
+  - Score de menace moyen: 21.7
+  - Score de menace max: 60.0
+  - Comportement NORMAL: 3 frames
+  - Comportement SUSPECT: 2 frames
+  - Comportement HOSTILE: 1 frames
+
+Drone ID 13:
+  - Frames analysées: 5
+  - Score de menace moyen: 7.0
+  - Score de menace max: 35.0
+  - Comportement NORMAL: 4 frames
+  - Comportement SUSPECT: 1 frames
+  - Comportement HOSTILE: 0 frames
+
+Drone ID 16:
+  - Frames analysées: 7
+  - Score de menace moyen: 0.0
+  - Score de menace max: 0.0
+  - Comportement NORMAL: 7 frames
+  - Comportement SUSPECT: 0 frames
+  - Comportement HOSTILE: 0 frames
+
+Drone ID 21:
+  - Frames analysées: 13
+  - Score de menace moyen: 25.4
+  - Score de menace max: 60.0
+  - Comportement NORMAL: 10 frames
+  - Comportement SUSPECT: 2 frames
+  - Comportement HOSTILE: 1 frames
+
+Drone ID 22:
+  - Frames analysées: 1242
+  - Score de menace moyen: 26.4
+  - Score de menace max: 80.0
+  - Comportement NORMAL: 1183 frames
+  - Comportement SUSPECT: 22 frames
+  - Comportement HOSTILE: 37 frames
+
