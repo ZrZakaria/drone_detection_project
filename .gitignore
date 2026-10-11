@@ -1,0 +1,23 @@
+__pycache__/
+*.pyc
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.local
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large model weights and videos (consider Git LFS)
+*.pt
+*.onnx
+*.mp4
+*.avi
